@@ -1,0 +1,182 @@
+/* Signature Projects Styles */
+.sig-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sig-title {
+  font-family: "Open Sans", serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 130px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f05d2c;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(30px);
+}
+
+.sig-title.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sig-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 140px 20px 140px;
+}
+
+.sig-footer-page {
+  width: 100%;
+}
+
+.sig-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(30px);
+}
+
+.sig-item.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sig-leftAlign {
+  flex-direction: row;
+}
+
+.sig-rightAlign {
+  flex-direction: row-reverse;
+}
+
+.sig-img {
+  width: 410px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.sig-rightAlign .sig-img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.sig-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sig-projectTitle {
+  font-family: "Montserrat", serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f05d2c;
+}
+
+.sig-projectDescription {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .sig-title {
+    font-size: 28px;
+  }
+
+  .sig-list {
+    width: 90%;
+  }
+
+  .sig-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sig-img {
+    width: 60%;
+    margin-bottom: 15px;
+  }
+
+  .sig-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sig-title {
+    font-size: 24px;
+  }
+
+  .sig-list {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sig-item {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sig-img {
+    width: 70%;
+    height: auto;
+  }
+
+  .sig-projectTitle {
+    font-size: 18px;
+  }
+
+  .sig-projectDescription {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sig-title {
+    font-size: 20px;
+  }
+
+  .sig-item {
+    padding: 10px;
+  }
+
+  .sig-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .sig-projectTitle {
+    font-size: 16px;
+  }
+
+  .sig-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sig-projectDescription {
+    font-size: 12px;
+  }
+}

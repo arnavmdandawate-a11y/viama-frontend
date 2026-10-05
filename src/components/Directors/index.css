@@ -1,0 +1,203 @@
+/* General Styles */
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Open Sans", serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 130px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f05d2c;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(30px);
+}
+
+.title.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.directorsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.footer {
+  height: 120px;
+  width: 100%;
+  background-color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footerText {
+  font-size: 14px;
+}
+
+.directorProfile {
+  width: 70%;
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 70px 0px 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(30px);
+}
+
+.leftAlign {
+  flex-direction: row;
+}
+
+.rightAlign {
+  flex-direction: row-reverse;
+}
+
+.directorProfile.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.directorImage {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.directorName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f05d2c;
+}
+
+.directorDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .directorsList {
+    width: 90%;
+  }
+
+  .directorProfile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .directorImage {
+    width: 60%;
+    margin-bottom: 15px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .directorsList {
+    width: 100%;
+    padding: 0;
+  }
+
+  .directorProfile {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .directorImage {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px; /* Makes the image appear on top */
+  }
+
+  .directorName {
+    font-size: 18px;
+  }
+
+  .directorDescription {
+    font-size: 14px;
+  }
+
+  .footerText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .directorProfile {
+    flex-direction: column !important; /* Ensure image is on top, text below */
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .directorImage {
+    width: 80%; /* Increase image size */
+    height: auto;
+    margin-bottom: 15px; /* Image on top with space */
+  }
+
+  .directorName {
+    font-size: 16px;
+  }
+
+  .directorsList {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .directorDescription {
+    font-size: 12px;
+  }
+
+  .footer {
+    height: 80px;
+  }
+
+  .footerText {
+    font-size: 10px;
+  }
+}

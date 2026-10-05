@@ -1,0 +1,46 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 10s ease-in-out infinite alternate;
+}
+
+/* Custom font for carousel captions */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.carousel-caption h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+}
+
+/* Responsive font size for tablets */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive font size for mobile devices */
+@media (max-width: 480px) {
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Smooth transition for captions */
+.carousel-caption {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Enhance image display */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    /* border-style: solid; */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.h-first-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-second-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Adjust for smaller screens */
+    overflow: hidden;
+}
+
+.first-sub-page {
+    height: 100vh;
+    width: 100%;
+}
+
+.first-sub-page img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sp-first-block {
+    margin-top: 50px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp-second-block {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px; /* Add padding for smaller screens */
+}
+
+.sp-second-block h1 {
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f05d2c;
+}
+
+.sp-second-block p {
+    font-family: "Raleway", serif;
+    font-size: 20px;
+    width: 100%; /* Adjust width for responsiveness */
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.black-box-sp {
+    height: 70%;
+    width: 80%;
+    background-color: black;
+}
+
+.black-box-sp img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.h-third-page {
+    height: auto; /* Adjust height for scrollable content */
+    width: 100%;
+    background-color: #efece7;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.h-tp-h1 {
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: #f05d2c;
+}
+
+.projects-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tp-black-box {
+    height: 30vh;
+    width: 30vw;
+    margin: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative; /* Add this line */
+    overflow: hidden; /* Optional: Ensures content stays within the box */
+}
+
+.h-fourth-page {
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.h-fp-h1-sp1 {
+    font-family: "Montserrat", serif;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.h-fp-h1 {
+    text-align: center;
+}
+
+.h-fp-h1-sp2 {
+    font-family: "Montserrat", serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #f05d2c;
+}
+
+.h-footer-page {
+    height: 120px;
+    width: 100%;
+    background-color: #5b5b5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.vertical-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.tp-black-box:hover .vertical-image {
+    opacity: 0.5;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.tp-black-box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-family: "Raleway", serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.h-fourth-page p{
+    margin: 3%;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 75px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .h-second-page {
+        flex-direction: column; 
+        height: 100%;/* Stack blocks vertically */
+    }
+
+    .sp-first-block,
+    .sp-second-block {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+    }
+
+    .sp-second-block p {
+        font-size: 16px; /* Smaller font for readability */
+        line-height: 24px;
+    }
+
+    .tp-black-box {
+        width: 80%; /* Reduce size of boxes */
+        height: 20vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .sp-second-block h1 {
+        font-size: 18px; /* Smaller heading size */
+    }
+
+    .sp-second-block p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .h-tp-h1 {
+        font-size: 28px;
+    }
+
+    .tp-black-box {
+        width: 90%;
+        height: 200px;
+    }
+
+    .h-fp-h1-sp1 {
+        font-size: 18px;
+    }
+
+    .h-fp-h1-sp2 {
+        font-size: 25px;
+    }
+    .h-fourth-page p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+}

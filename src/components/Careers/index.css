@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 525;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.person-resumes{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 525;
+    font-size: 20px;
+    text-align: center;
+}
+
+.person-resumes a{
+    text-decoration: none;
+    color: #f1793c;
+    font-size: 25px;
+}
+
+.career-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.h-footer-page--contact{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
