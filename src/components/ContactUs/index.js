@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaFax } from "react-icons/fa";
 
 import './index.css'
 
@@ -20,6 +19,7 @@ class ContactUs extends Component {
                     <div className="contact-block">
                         <div className="contact-black-block">
                             <iframe
+                                title="Viama Infratech office location on Google Maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7544.299552295743!2d73.0326519423014!3d19.013120678714053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3aca6f89e15%3A0x8943a177075823b3!2sPujit%20Plaza!5e0!3m2!1sen!2sin!4v1736003343485!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"

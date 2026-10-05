@@ -8,7 +8,6 @@ import Career from './components/Careers';
 import Projects from './components/Projects';
 import Directors from './components/Directors';
 // import Chatbot from './components/chatbot';
-import AutoNavigate from './components/AutoNavigate';
 import Certificates from './components/Certificates';
 import { Route, Routes } from 'react-router-dom'; 
 

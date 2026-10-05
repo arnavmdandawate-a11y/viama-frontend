@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 class Footer extends Component {
   render() {
